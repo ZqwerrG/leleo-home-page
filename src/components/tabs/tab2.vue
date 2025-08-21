@@ -202,6 +202,22 @@ export default {
         this.wallpaperPIC = this.configdata.wallpaper.pic;
         this.wallpaperVD = this.configdata.wallpaper.video;
         this.radios.title = "请选择壁纸";
+
+        // 新增：每2分钟自动切换图片壁纸
+        this.autoSwitchInterval = setInterval(() => {
+            if (this.tab === 'tab-1' && Array.isArray(this.wallpaperPIC) && this.wallpaperPIC.length > 0) {
+                // 计算下一个索引
+                let currentIndex = this.wallpaperPIC.findIndex(item => item === this.radios);
+                let nextIndex = (currentIndex + 1) % this.wallpaperPIC.length;
+                this.radios = this.wallpaperPIC[nextIndex];
+            }
+        }, 2 * 60 * 1000); // 2分钟
+    },
+    beforeUnmount() {
+        // 清理定时器
+        if (this.autoSwitchInterval) {
+            clearInterval(this.autoSwitchInterval);
+        }
     },
     watch: {
         tab(val) {
@@ -274,7 +290,7 @@ export default {
             this.loading1 = true
             setTimeout(() => {
                 this.loading = false;
-                this.eraseCookie('leleodatabackground');
+                this.eraseCookie('leleadatabackground');
                 location.reload();
             }, 800) 
         },
