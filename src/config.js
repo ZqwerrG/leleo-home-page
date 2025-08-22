@@ -1,14 +1,14 @@
 const config = {
 	//网页元数据
 	metaData: {
-		title: 'Leleo的个人主页🎉',
-		description: '欢迎来到Leleo的奇妙世界！',
-		keywords: 'Leleo,leleo,个人主页,个人网站',
+		title: 'ZqwertG的个人主页🎉',
+		description: '欢迎来到ZqwertG的奇妙世界！',
+		keywords: 'ZqwertG,zqwertg,个人主页,个人网站',
 		icon: '/favicon.ico'   //网页图标，支持外链
 	},
 
-	avatar: "/img/avatar.jpg", // 头像
-	welcometitle: "Hi, I'm Leleo", // 标题
+	avatar: "/img/123.jpg", // 头像
+	welcometitle: "Hi, I'm ZqwertG", // 标题
 
 	// 颜色配置
 	color: {
@@ -22,24 +22,24 @@ const config = {
 	blur: 5, // 毛玻璃模糊效果
 
 	// 我的标签
-	tags: ['乐观开朗', '温柔体贴', '随和亲切', '冷静沉着', '才思敏捷', '风趣幽默', '刚正不阿', '善解人意'],
+	//tags: ['乐观开朗', '温柔体贴', '随和亲切', '冷静沉着', '才思敏捷', '风趣幽默', '刚正不阿', '善解人意'],
 
 	// 默认背景壁纸
 	background: {
 		"pc": {   //pc端
 			"type": "pic",   //"pic":静态壁纸;"video":动态壁纸
 			"datainfo": {
-				"title": "海洋女孩",
-				"preview": "/img/wallpaper/static/海洋女孩/image-pre.webp",
-				"url": "/img/wallpaper/static/海洋女孩/image.png",     //当然，也可填写网络地址或壁纸api，如随机PC壁纸api："url":"https://t.mwm.moe/pc"
+				"title": "https://hpic.072103.xyz",
+				"preview": "https://hpic.072103.xyz",
+				"url": "https://hpic.072103.xyz",     //当然，也可填写网络地址或壁纸api，如随机PC壁纸api："url":"https://t.mwm.moe/pc"
 			},
 		},
 		"mobile": {   //移动端
 			"type": "pic",
 			"datainfo": {
 				"title": "0001",
-				"preview": "/img/wallpaper/static-mobile/0001/image-pre.webp",
-				"url": "/img/wallpaper/static-mobile/0001/image.png"  //同理，随机移动端壁纸："url":"https://t.mwm.moe/mp"
+				"preview": "https://vpic.072103.xyz",
+				"url": "https://vpic.072103.xyz"  //同理，随机移动端壁纸："url":"https://t.mwm.moe/mp"
 			}
 		}
 
@@ -47,18 +47,15 @@ const config = {
 
 	//极坐标图数据
 	polarChart: {
-		skills: ['Vue.js', 'React', 'JavaScript', 'Node', 'Java', 'Python', 'linux', 'Docker', 'MySQL', 'MongoDB', 'AWS'],
-		skillPoints: [85, 78, 88, 90, 80, 78, 85, 65, 82, 78, 70],
+		skills: [],
+		skillPoints: [],
 	},
 
 	//社交按钮
 	socialPlatformIcons: [
-		{ icon: "mdi-github", link: "https://www.github.com/leleo886" },
-		{ icon: "mdi-email", link: "mailto:leleo886@foxmail.com" },
-		{ icon: "mdi-qqchat", link: "https://im.qq.com/" },
-		{ icon: "mdi-wechat", link: "https://wx.qq.com/" },
-		{ icon: "mdi-youtube", link: "https://www.youtube.com" },
-		{ icon: "mdi-facebook", link: "https://www.facebook.com" }
+
+		{ icon: "mdi-email", link: "mailto:leleo886@foxmail.com" }
+
 	],
 
 	//打字机
@@ -138,17 +135,16 @@ const config = {
 
 	//项目卡片 其中 字段"show"控制初始卡片的text是否展开
 	projectcards: [
-		{ go: "🚀 前往", img: "/img/sunshine.jpg", title: "Project 1", subtitle: "1,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "🗂️ 前往", img: "/img/sunshine.jpg", title: "Project 2", subtitle: "2,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "📝 前往", img: "/img/sunshine.jpg", title: "Project 3", subtitle: "3,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "👍 前往", img: "/img/sunshine.jpg", title: "Project 4", subtitle: "4,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "🗃 前往", img: "/img/sunshine.jpg", title: "Project 5", subtitle: "5,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "🎨 前往", img: "/img/sunshine.jpg", title: "Project 6", subtitle: "6,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "💍 前往", img: "/img/sunshine.jpg", title: "Project 7", subtitle: "7,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "🔍 前往", img: "/img/sunshine.jpg", title: "Project 8", subtitle: "8,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
+		{ go: "🚀 前往", img: "https://hpic.072103.xyz/", title: "Blog", subtitle: "博客", text: "", url: "https://blog.zghome.top", show: false },
+		{ go: "🗂️ 前往", img: "https://hpic.072103.xyz/", title: "云盘", subtitle: "由openlist驱动", text: "I", url: "https://pan.zghome.top", show: false },
+		{ go: "📝 前往", img: "https://hpic.072103.xyz/", title: "导航", subtitle: "", text: "", url: "https://web.zghome.top.top", show: false },
+		{ go: "👍 前往", img: "https://hpic.072103.xyz/", title: "今日热榜", subtitle: "", text: "", url: "https://hot.zghome.top", show: false },
+		{ go: "🗃 前往", img: "https://hpic.072103.xyz/", title: "哪吒面板", subtitle: "", text: "", url: "https://dashboard.zghome.top", show: false },
+		{ go: "🎨 前往", img: "https://hpic.072103.xyz/", title: "音乐", subtitle: "", text: "", url: "https://music.zghome.top", show: false },
+		
 	],
 
-	statement: ["备案号：XXICP备123456789号", "Copyright © 2025 Leleo"],
+	statement: [""],
 }
 
 export default config
